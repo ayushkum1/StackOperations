@@ -8,16 +8,19 @@ public class Stack implements StackOpertaionInterface{
 	int top = -1;
 	int size;
 	
+	//constructor to initialize an array with user given size
 	public Stack(int size) {
 		super();
 		this.size = size;
-		arr = new int[size];
+		arr = new int[size];//initializing
 	}
 
 	public int[] getArr() {
 		return arr;
 	}
 	
+	//push method will first check if the stack is full, if yes then it will return,
+	//else increment the top and store the number at top(index) in array
 	@Override
 	public void push(int n) {
 		if(isFull()) {
@@ -30,6 +33,8 @@ public class Stack implements StackOpertaionInterface{
 		
 	}
 
+	//pop method will first check if the stack is empty, if yes then it will return, 
+	//else it will decrement the top value
 	@Override
 	public int pop() {
 		
@@ -45,6 +50,7 @@ public class Stack implements StackOpertaionInterface{
 		return popNumber;
 	}
 
+	//if top is -1 then stack is empty
 	@Override
 	public boolean isEmpty() {
 		
@@ -55,6 +61,7 @@ public class Stack implements StackOpertaionInterface{
 		return false;
 	}
 
+	//if top is equal to stack size then full
 	@Override
 	public boolean isFull() {
 		

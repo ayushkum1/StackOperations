@@ -67,7 +67,7 @@ public class Tester {
 					break;
 
 				case 5:
-
+					//printing
 					stackArray = ((Stack) stInterface).getArr();
 					
 					System.out.println(Arrays.toString(stackArray));
@@ -75,7 +75,7 @@ public class Tester {
 					break;
 
 				case 6:
-					
+					//reverse printing 
 					if(stInterface.isEmpty()) {
 						System.out.println("Empty...");
 					}else {
